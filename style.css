@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+*{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:#34344e;
+    background-size: 400%;
+    height: 100vh;
+    font-family: 'Lato';
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: #2f2f46;
+    min-height: 50px;
+    
+}
+header .nav
+{
+    text-align: center;
+}
+
+.box-img-header{
+    height: 100%;
+}
+
+.img-logo{
+    height: 100%;
+    max-height: 60px;
+}
+
+nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links:hover{
+    color: black;
+    text-decoration: underline;
+    transition: .4s;
+}
+
+
+
+:is(button,.link-action){
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn-action{
+    background-color: transparent;
+    border: 1px solid white;
+    color:white;
+}
+
+.btn-action:hover{
+    background-color:  #70e3ea;
+    border: 1px solid #70e3ea;
+}
+
+.link-action{
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section{
+    padding: 4rem;
+}
+
+.first-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    min-height: 650px;
+    flex-wrap: wrap;
+}
+
+.first-section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
+
+h1{
+    font-size: 4rem;
+    letter-spacing: 8px;
+    color: white;
+}
+
+strong{
+    color: #70e3ea;
+}
+
+.first-section p{
+    color: white;
+}
+
+.first-section button{
+    width: 200px;
+}
+
+.box-img-main{
+    max-width: 450px;
+    padding: 1rem;
+}
+
+.img-profile{
+    width: 100%;
+    border-radius: 50%;
+}
+
+:is(.second-section, .fourth-section){
+    background-color:#70e3ea;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.title{
+    color:#34344e;
+}
+
+.second-section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.second-section p{
+    color:#34344e;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.second-section p:hover{
+    color: rgb(233, 220, 216);
+    transition: .4s;
+    cursor: default;
+}
+
+.third-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.third-section > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.third-section > div img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.third-section > div p{
+    max-width: 600px;
+    color: rgb(255, 255, 255);
+}
+
+#my-projects-list{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: large;
+}
+
+#my-projects-list a{
+    text-decoration: none;
+    color: #34344e;
+}
+
+#my-projects-list a:hover{
+    transition: .4s;
+    color: darkcyan;
+}
+#loading
+{
+    color:rgb(255, 155, 14);
+}
+
+:is(.img-profile,.img-who-am-i){
+    box-shadow: 1px 1px 1px 1px cyan;
+}
+
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+footer > div{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background-color: #2f2f46;
+    
+}
+svg{
+    font-size: 3rem;
+    color: #70e3ea;
+
+
+}
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+  }
+  
+
+  #scrollToTop {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    border: 0;
+    
+    width: 60px; /* Set a fixed width */
+    background-color: #2f2f46; 
+    color: #ffffff; /* Set text color */
+    border-radius: 100%; /* Add rounded corners */
+    height: 60px;
+}
+
+#scrollToTop:hover {
+    background-color: #70e3ea; /* Lighter background color on hover */
+    cursor: pointer;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* ... (seu código CSS existente) ... */
+
+
+/* ... (seu código CSS existente) ... */
+
+  
+/* Defina a animação keyframes para o efeito de digitação */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+    
+}
+
+
+/* Aplicar o efeito de digitação à sua classe elementor */
+.elementor {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing  3s steps(30, end);
+}
