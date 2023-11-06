@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato');
 *{
     scroll-behavior: smooth;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
 }
 body{
     background-color:#34344e;
@@ -45,6 +48,7 @@ nav{
 .nav-links{
     text-decoration: none;
     color: white;
+    font-size: 1.2rem;
 }
 
 .nav-links:hover{
@@ -307,4 +311,12 @@ svg{
     margin: 0 auto;
     letter-spacing: 0.15em;
     animation: typing  3s steps(30, end);
+}
+
+
+@media (max-width: 768px) {
+    h1{
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
 }
